@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Funcionário" as F
+actor "Funcionário PCD" as FPCD
+actor "Gestor/Segurança" as G
+
+rectangle "Sistema de Automação Berg Works" {
+  usecase "Realizar Acesso por Voz" as UC1
+  usecase "Receber Feedback Sonoro" as UC2
+  usecase "Controlar Iluminação/AC" as UC3
+  usecase "Receber Alerta de Segurança" as UC4
+  usecase "Identificar Presença (Facial)" as UC5
+}
+
+F --> UC1
+F --> UC3
+
+FPCD --> UC1
+FPCD --> UC2
+
+G --> UC4
+G --> UC5
+
+note right of UC1
+  RU: 5593951
+end note
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+class Funcionario {
+  - String nome
+  - String ru_aluno: [Seu RU]
+  - byte[] biometriaVoz
+  + realizarAcesso()
+}
+
+class Dispositivo {
+  - int id
+  - boolean status
+  + ligar()
+  + desligar()
+}
+
+class Sensor {
+  - float sensibilidade
+  + detectarPresenca()
+}
+
+class RegistroAcesso {
+  - DateTime dataHora
+  - String idFuncionario
+  + salvarLog()
+}
+
+Funcionario "1" -- "0..*" RegistroAcesso
+Dispositivo <|-- Iluminacao
+Dispositivo <|-- ArCondicionado
+Sensor --> Dispositivo : aciona
+@enduml
