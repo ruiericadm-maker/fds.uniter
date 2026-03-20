@@ -1,28 +1,34 @@
 ﻿# Sistema de Automação Berg Works 🏢
 
-Projeto prático desenvolvido para a disciplina de **Análise e Modelagem de Sistemas** no Centro Universitário Internacional (UNINTER)[cite: 1, 5, 6].
+Projeto prático desenvolvido para a disciplina de **Análise e Modelagem de Sistemas** no Centro Universitário Internacional (UNINTER).
 
 ## 📌 Sobre o Projeto
-O **Berg Works** é uma solução de automação voltada para a gestão de infraestrutura corporativa e controle de acesso, com foco em acessibilidade e conformidade com a LGPD[cite: 22, 32, 104].
+O **Berg Works** é uma solução de automação voltada para a gestão de infraestrutura corporativa e controle de acesso, com foco em acessibilidade e conformidade com a LGPD.
 
 ## 🛠️ Requisitos do Sistema
 
-### Requisitos Funcionais (O que o sistema faz) [cite: 15, 16]
-* **RF01 - Registro de Ponto Multimodal:** Permite registro via NFC e comando de voz para funcionários PCD[cite: 20, 21, 22].
-* **RF02 - Manutenção Automática:** Abertura de ordens de serviço baseada em sensores críticos[cite: 23, 24, 25, 26].
-* **RF03 - Relatórios Operacionais:** Geração de dados detalhados para gestão de desempenho[cite: 27, 28, 29].
+### Requisitos Funcionais (RF)
+* **RF01 - Registro de Ponto Multimodal:** Registro via NFC e comando de voz para acessibilidade.
+* **RF02 - Manutenção Automática:** Abertura de ordens via sensores críticos.
+* **RF03 - Relatórios Operacionais:** Filtros por período, setor e dispositivo.
+* **RF04 - Gestão de Dispositivos:** CRUD completo do parque tecnológico.
+* **RF05 - Integração LDAP:** Sincronização com diretório corporativo.
+* **RF06 - Exportação de Dados:** Relatórios em PDF e CSV com envio por e-mail.
 
-### Requisitos Não Funcionais (Como o sistema é) [cite: 17, 19]
-* **RNF01 - Hospedagem On-premises:** Garantia de segurança e soberania de dados[cite: 30, 31, 32].
-* **RNF02 - Segurança:** Autenticação multifator (MFA) e controle de acesso RBAC[cite: 33, 34, 35].
-* **RNF03 - Disponibilidade:** SLA de 99,5% em horário comercial[cite: 36, 37, 38].
+### Requisitos Não Funcionais (RNF)
+* **RNF01 - Hospedagem On-premises:** Segurança e conformidade local com a LGPD.
+* **RNF02 - Segurança:** Autenticação MFA e controle de acesso RBAC.
+* **RNF03 - Disponibilidade:** SLA de 99,5% em horário comercial.
+* **RNF04 - Criptografia:** Dados protegidos com AES-256 e TLS 1.3.
+* **RNF05 - Auditoria:** Trilha de eventos críticos por 12 meses.
+* **RNF06 - Acessibilidade:** Interface responsiva seguindo WCAG 2.1 AA.
 
-## 📊 Modelagem UML
-O projeto conta com diagramas de:
-1. **Caso de Uso:** Mapeamento das interações entre Funcionários, Gestores e o Sistema[cite: 41, 42, 49, 50, 57].
-2. **Diagrama de Classes:** Estrutura orientada a objetos incluindo Herança e Associações[cite: 111, 113, 115].
+## 📊 Modelagem Técnica (UML)
+Os diagramas foram desenvolvidos utilizando a linguagem **PlantUML**. Você pode acessar os scripts originais na pasta `/modelagem`:
+
+* 📄 [Script: Diagrama de Caso de Uso](./modelagem/caso_de_uso.puml)
+* 📄 [Script: Diagrama de Classes](./modelagem/diagrama_classes.puml)
 
 ---
-**Desenvolvido por:** Rui Eric Feitoza Melo [cite: 10, 202]  
-**RU:** 5593951 [cite: 12, 146]  
-**Data:** 19/03/2026 [cite: 4, 82, 203]
+**Aluno:** Rui Eric Feitoza Melo    
+**Curso:** Análise e Desenvolvimento de Sistemas (ADS)
